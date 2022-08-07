@@ -1,15 +1,21 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import _fetch from 'isomorphic-fetch'
-import { Button, Card } from 'semantic-ui-react'
+import { Button, Card,Icon } from 'semantic-ui-react'
+
+
+
 
 const Index = ({ notes }) => {
   return (
     <div className="notes-container">
-      <h1>Notes</h1>
+      <h1>Here you can find your notes, Books...</h1>
+
       <div className="grid wrapper">
         {notes.map(note => {
           return (
             <div key={note._id}>
+
               <Card>
                 <Card.Content>
                   <Card.Header>
@@ -20,10 +26,10 @@ const Index = ({ notes }) => {
                 </Card.Content>
                 <Card.Content extra>
                   <Link href={`/${note._id}`}>
-                    <Button primary>View</Button>
+                    <Button primary> <Icon link name='eye' /></Button>
                   </Link>
                   <Link href={`/${note._id}/edit`}>
-                    <Button primary>Edit</Button>
+                    <Button primary> <Icon link name='edit' /></Button>
                   </Link>
                 </Card.Content>
               </Card>

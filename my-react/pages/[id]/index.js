@@ -1,7 +1,9 @@
 import _fetch from 'isomorphic-fetch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { Confirm, Button, Loader } from 'semantic-ui-react';
+import { Confirm, Button, Loader,Icon } from 'semantic-ui-react';
+
+
 
 const Note = ({ note }) => {
     const [confirm, setConfirm] = useState(false);
@@ -44,7 +46,7 @@ const Note = ({ note }) => {
                 <>
                     <h1>{note.title}</h1>
                     <p>{note.description}</p>
-                    <Button color='red' onClick={open}>Delete</Button>
+                    <Button color='red' onClick={open}>Delete  <Icon link name='remove circle' /></Button>
                 </>
             }
             <Confirm

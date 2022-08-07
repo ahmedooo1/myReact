@@ -66,7 +66,7 @@ const NewNote = () => {
 
     return (
         <div className="form-container">
-            <h1>Create Note</h1>
+            <h1>Add a Book</h1>
             <div>
                 {
                     isSubmitting
@@ -88,7 +88,7 @@ const NewNote = () => {
                                 error={errors.description ? { content: 'Please enter a description', pointing: 'below' } : null}
                                 onChange={handleChange}
                             />
-                            <Button type='submit'>Create</Button>
+                            <Button primary type='submit'>Create</Button>
                         </Form>
                 }
             </div>

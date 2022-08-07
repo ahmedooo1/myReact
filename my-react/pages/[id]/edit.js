@@ -90,7 +90,7 @@ const EditNote = ({ note }) => {
                                 value={form.description}
                                 onChange={handleChange}
                             />
-                            <Button type='submit'>Update</Button>
+                            <Button positive type='submit'>Update</Button>
                         </Form>
                 }
             </div>

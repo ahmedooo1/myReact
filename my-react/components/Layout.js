@@ -5,7 +5,7 @@ const  Layout = ({ children }) => (
 
 		<>
 			<Head>
-				<title>NextJS | Full-stack CRUD App</title>
+				<title>Ahmad react library App</title>
 			</Head>
       <Navbar />
 			{children}
