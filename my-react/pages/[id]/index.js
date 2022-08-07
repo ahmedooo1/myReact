@@ -2,6 +2,8 @@ import _fetch from 'isomorphic-fetch';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { Confirm, Button, Loader,Icon } from 'semantic-ui-react';
+import Link from 'next/link';
+
 
 
 
@@ -46,7 +48,15 @@ const Note = ({ note }) => {
                 <>
                     <h1>{note.title}</h1>
                     <p>{note.description}</p>
+                    <div className='my-btns'>
+                    <Link href="/">
+      <a className="navbar-brand">Back <Icon link name='home' /></a>
+    </Link>
                     <Button color='red' onClick={open}>Delete  <Icon link name='remove circle' /></Button>
+                      <Link href={`/${note._id}/edit`}>
+                    <Button primary> <Icon link name='edit' /></Button>
+                  </Link>
+</div>
                 </>
             }
             <Confirm

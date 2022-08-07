@@ -2,11 +2,15 @@
   "name": "my-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ahmedooo1.github.io/my-react",
   "scripts": {
+
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint" ,
+      "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "isomorphic-fetch": "^3.0.0",
@@ -18,6 +22,7 @@
   },
   "devDependencies": {
     "eslint": "8.21.0",
-    "eslint-config-next": "12.2.3"
+    "eslint-config-next": "12.2.3",
+    "gh-pages": "^4.0.0"
   }
 }

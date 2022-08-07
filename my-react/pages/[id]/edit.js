@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import _fetch from 'isomorphic-fetch';
-import { Button, Form, Loader } from 'semantic-ui-react';
+import { Button, Form, Loader,Icon } from 'semantic-ui-react';
 import { useRouter } from 'next/router';
 
 const EditNote = ({ note }) => {
@@ -90,7 +90,13 @@ const EditNote = ({ note }) => {
                                 value={form.description}
                                 onChange={handleChange}
                             />
-                            <Button positive type='submit'>Update</Button>
+                            <div className='my-btns update-btns'>
+                                <Link href="/">
+      <a className="navbar-brand">Back <Icon link name='reply' /></a>
+    </Link>
+
+                            <Button positive type='submit'>Update <Icon link name='chevron right' /></Button>
+                            </div>
                         </Form>
                 }
             </div>
