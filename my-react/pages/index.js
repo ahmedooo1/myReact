@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import _fetch from 'isomorphic-fetch'
 import { Button, Card,Icon, TableFooter } from 'semantic-ui-react'
-import Footer from '../components/Footer'
+
 
 
 
@@ -39,7 +39,7 @@ const Index = ({ notes }) => {
         })}
       </div>
 
-  <Footer />
+
     </div>
 
   )

@@ -4,15 +4,15 @@
   "private": true,
   "homepage": "http://ahmedooo1.github.io/my-react",
   "scripts": {
-
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint" ,
-      "predeploy": "npm run build",
+    "lint": "next lint",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "firebase": "^9.9.2",
     "isomorphic-fetch": "^3.0.0",
     "next": "12.2.3",
     "react": "18.2.0",
