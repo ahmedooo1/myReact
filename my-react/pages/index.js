@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import _fetch from 'isomorphic-fetch'
-import { Button, Card,Icon } from 'semantic-ui-react'
-
+import { Button, Card,Icon, TableFooter } from 'semantic-ui-react'
+import Footer from '../components/Footer'
 
 
 
@@ -26,7 +26,7 @@ const Index = ({ notes }) => {
                 </Card.Content>
                 <Card.Content extra>
                   <Link href={`/${note._id}`}>
-                    <Button primary> <Icon link name='eye' /></Button>
+                    <Button positive> <Icon link name='eye' /></Button>
                   </Link>
                   <Link href={`/${note._id}/edit`}>
                     <Button primary> <Icon link name='edit' /></Button>
@@ -34,10 +34,14 @@ const Index = ({ notes }) => {
                 </Card.Content>
               </Card>
             </div>
+
           )
         })}
       </div>
+
+  <Footer />
     </div>
+
   )
 }
 

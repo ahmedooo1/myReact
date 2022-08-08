@@ -50,7 +50,7 @@ const Note = ({ note }) => {
                     <p>{note.description}</p>
                     <div className='my-btns'>
                     <Link href="/">
-      <a className="navbar-brand">Back <Icon link name='home' /></a>
+      <a className="navbar-brand" >Back <Icon link name='reply large' primary/></a>
     </Link>
                     <Button color='red' onClick={open}>Delete  <Icon link name='remove circle' /></Button>
                       <Link href={`/${note._id}/edit`}>

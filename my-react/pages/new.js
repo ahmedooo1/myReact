@@ -66,7 +66,7 @@ const NewNote = () => {
 
     return (
         <div className="form-container">
-            <h1>Add a Book</h1>
+            <h1>Add what you want</h1>
             <div>
                 {
                     isSubmitting

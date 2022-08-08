@@ -92,7 +92,7 @@ const EditNote = ({ note }) => {
                             />
                             <div className='my-btns update-btns'>
                                 <Link href="/">
-      <a className="navbar-brand">Back <Icon link name='reply' /></a>
+      <a className="navbar-brand">Back <Icon link name='reply large' /></a>
     </Link>
 
                             <Button positive type='submit'>Update <Icon link name='chevron right' /></Button>
@@ -100,7 +100,9 @@ const EditNote = ({ note }) => {
                         </Form>
                 }
             </div>
+
         </div>
+
     )
 }
 
