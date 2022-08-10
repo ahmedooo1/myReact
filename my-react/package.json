@@ -9,10 +9,12 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heruko-postbuild": "npm run build"
   },
   "dependencies": {
     "firebase": "^9.9.2",
+    "heroku": "^7.62.0",
     "isomorphic-fetch": "^3.0.0",
     "next": "12.2.3",
     "react": "18.2.0",
